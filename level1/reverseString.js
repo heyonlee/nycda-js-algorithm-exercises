@@ -1,11 +1,18 @@
 /*
- * Given a string, returns a new string that is the same as the original string with the order of its characters reversed.
+ * Given a string, returns a new string 
+    that is the same as the original string with the order of its characters reversed.
  * You're not allowed to use String.prototype.reverse().
  * Returns the new string.
  */
-function reverseString() {
-
-}
+    function reverseString(str) {
+      let arr=[]; 
+      for (i=str.length - 1; i >=0; i--) {
+          arr.push(str[i])
+                 
+      }
+           return arr.join('')
+    }
+  console.log(reverseString('*'))  
 
 describe('reverseString', function() {
   const assert = require("chai").assert;

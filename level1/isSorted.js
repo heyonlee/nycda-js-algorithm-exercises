@@ -1,7 +1,34 @@
+const { createForbiddenExclusivityError } = require('mocha/lib/errors')
+
 /**
- * Given an array of numbers, it checks whether it is sorted (in the ascending order). Returns true or false.
+ * Given an array of numbers, 
+ * it checks whether it is sorted (in the ascending order).
+ *  Returns true or false.
  */
-function isSorted() {}
+ function isSorted(arr) {
+  let arrNew=[]
+  let a = null
+    if(arr.length==0 ||arr.length==1){
+    return true
+  }
+  arrNew.push(arr[0])
+ for (i=1; i<arr.length; i++){
+   if (arr[i] >= arrNew[i-1]){
+        arrNew.push(arr[i])
+       a = true
+   }     
+   else {  
+        a =false
+    }      
+  }
+  return a
+           
+}
+console.log(isSorted( [ 7, 8, 9, 2 ] ))
+
+
+
+
 
 describe('isSorted', function() {
   const assert = require('chai').assert;

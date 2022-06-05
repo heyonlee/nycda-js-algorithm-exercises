@@ -1,9 +1,25 @@
 /**
- * Given a string, counts the number of words inside it. Each word is separated by a single space character.
+ * Given a string, counts the number of words inside it. 
+ * Each word is separated by a single space character.
  */
-function countWords() {
+function countWords(str) {
+     a=0
+      if (str.length == 0){
+        return  a = 0 
+      }
 
-}
+     else if( str.length >0) { 
+       return a= str.split(" ").length
+    }
+    return a
+    }
+     console.log(countWords(""))
+     
+
+ 
+
+
+
 
 describe('countWords', function() {
   const assert = require("chai").assert;

@@ -1,5 +1,8 @@
 /**
- * Given a string, returns an object containing attributes for each letter occuring in the string, with the associated value being the number of occurances of that character in the string.
+ * Given a string, 
+ * returns an object containing attributes for each letter occuring in the string,
+ *  with the associated value being the number of occurances of that character
+ *  in the string.
  */
 function countLetters() {
 
